@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service PowerService {
+  rpc ComputePower (PowerRequest) returns (PowerResponse);
+}
+
+message PowerRequest {
+  float x = 1;
+  float y = 2;
+}
+
+message PowerResponse {
+  float result = 1;
+}
